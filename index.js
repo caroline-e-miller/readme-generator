@@ -2,15 +2,26 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const util = require('util');
+const generateMarkdown = require('./generateMarkdown');
 
 // TODO: Create an array of questions for user input
 const questions = ['What is the title of your project?', 'Give a detailed description of your project.', 'Describe the installation instructions.', 'Write the usage information.', 'Describe the contribution guidelines.', 'What are the test instructions?', 'What is your GitHub username?', 'Please enter your email address.'];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) { }
+// How do I do this without an inquirer array of objects, and instead, an array of questions? Maybe look at song example?
+function writeToFile(fileName, data) {
+    return inquirer.prompt([
+
+    ])
+}
 
 // TODO: Create a function to initialize app
-function init() { }
+function init() {
+    writeToFile()
+        .then((data) => writeFileAsync('README.md', generateMarkdown(data))) // generateMarkdown is a guess, generateHTML doesn't work
+        .then(() => console.log('Wrote to README.md'))
+        .catch((err) => console.error(err));
+};
 
 // Function call to initialize app
 init();
