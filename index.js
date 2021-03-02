@@ -48,24 +48,24 @@ const questions = () => {
             message: 'Please enter your email address.',
         }
     ])
+};
 
 
-    // TODO: Create a function to write README file
-    // How do I do this without an inquirer array of objects, and instead, an array of questions? Maybe look at song example?
-    function writeToFile(fileName, data) {
+// TODO: Create a function to write README file
+function writeToFile(fileName, data) {
 
-    }
+}
 
-    // TODO: Create a function to initialize app
-    function init() {
-        questions()
-            .then((data) => writeFileAsync('README.md', generateMarkdown(data))) // generateMarkdown is a guess, generateHTML doesn't work
-            .then(() => console.log('Wrote to README.md'))
-            .catch((err) => console.error(err));
-    };
+// TODO: Create a function to initialize app
+function init() {
+    questions()
+        .then((data) => writeToFile('README.md', generateMarkdown(data))) // generateMarkdown is a guess, generateHTML doesn't work
+        .then(() => console.log('Wrote to README.md'))
+        .catch((err) => console.error(err));
+};
 
-    // Function call to initialize app
-    init();
+// Function call to initialize app
+init();
 
 // GIVEN a command-line application that accepts user input
 // WHEN I am prompted for information about my application repository
