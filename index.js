@@ -5,26 +5,67 @@ const util = require('util');
 const generateMarkdown = require('./generateMarkdown');
 
 // TODO: Create an array of questions for user input
-const questions = ['What is the title of your project?', 'Give a detailed description of your project.', 'Describe the installation instructions.', 'Write the usage information.', 'Describe the contribution guidelines.', 'What are the test instructions?', 'What is your GitHub username?', 'Please enter your email address.'];
-
-// TODO: Create a function to write README file
-// How do I do this without an inquirer array of objects, and instead, an array of questions? Maybe look at song example?
-function writeToFile(fileName, data) {
+const questions = () => {
     return inquirer.prompt([
-
+        {
+            type: 'input',
+            name: 'project',
+            message: 'What is the title of your project?',
+        },
+        {
+            type: 'input',
+            name: 'description',
+            message: 'Give a detailed description of your project.',
+        },
+        {
+            type: 'input',
+            name: 'installation',
+            message: 'Describe the installation instructions.',
+        },
+        {
+            type: 'input',
+            name: 'usage',
+            message: 'Write the usage information.',
+        },
+        {
+            type: 'input',
+            name: 'contribution',
+            message: 'Describe the contribution guidelines.',
+        },
+        {
+            type: 'input',
+            name: 'test',
+            message: 'What are the test instructions?',
+        },
+        {
+            type: 'input',
+            name: 'test',
+            message: 'What is your GitHub username?',
+        },
+        {
+            type: 'input',
+            name: 'email',
+            message: 'Please enter your email address.',
+        }
     ])
-}
 
-// TODO: Create a function to initialize app
-function init() {
-    writeToFile()
-        .then((data) => writeFileAsync('README.md', generateMarkdown(data))) // generateMarkdown is a guess, generateHTML doesn't work
-        .then(() => console.log('Wrote to README.md'))
-        .catch((err) => console.error(err));
-};
 
-// Function call to initialize app
-init();
+    // TODO: Create a function to write README file
+    // How do I do this without an inquirer array of objects, and instead, an array of questions? Maybe look at song example?
+    function writeToFile(fileName, data) {
+
+    }
+
+    // TODO: Create a function to initialize app
+    function init() {
+        questions()
+            .then((data) => writeFileAsync('README.md', generateMarkdown(data))) // generateMarkdown is a guess, generateHTML doesn't work
+            .then(() => console.log('Wrote to README.md'))
+            .catch((err) => console.error(err));
+    };
+
+    // Function call to initialize app
+    init();
 
 // GIVEN a command-line application that accepts user input
 // WHEN I am prompted for information about my application repository
