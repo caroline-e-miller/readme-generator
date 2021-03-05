@@ -69,8 +69,8 @@ const questions = () => {
 // TODO: Create a function to initialize app
 function init() {
     questions()
-        .then((data) => saveMarkdown('README.md', generateMarkdown(data))) // generateMarkdown is a guess, generateHTML doesn't work
-        .then(() => console.log('Wrote to README.md'))
+        .then((data) => saveMarkdown('customREADME.md', generateMarkdown(data))) // generateMarkdown is a guess, generateHTML doesn't work
+        .then(() => console.log('Wrote to customREADME.md'))
         .catch((err) => console.error(err));
 };
 
