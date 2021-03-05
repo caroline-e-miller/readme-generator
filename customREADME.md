@@ -9,7 +9,8 @@
 5. [Test](#test)
 6. [Questions?](#questions)
 
-  ![Github badge](https://img.shields.io/badge/license-MIT-blue.svg)
+  ![Github badge](https://img.shields.io/badge/license-Mozilla-blue.svg)
+  [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
   
 [License section](#license)
 
@@ -29,9 +30,7 @@ test
 test
     
 ## Questions?
-  If you have any questions, feel free to contact me:
-  - Via email at test 
-  - Or through GitHub at (https://github.com/test).
+  If you have any questions, feel free to contact me via email at test, or through GitHub at (https://github.com/test).
     
 ## License
-This product is covered under [![Github badge](https://img.shields.io/badge/license-MIT-blue.svg)]()
+This product is covered under [![Github badge](https://img.shields.io/badge/license-Mozilla-blue.svg)]()

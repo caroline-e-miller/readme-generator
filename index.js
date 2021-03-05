@@ -44,7 +44,7 @@ const questions = () => {
             type: 'list',
             name: 'license',
             message: 'license type',
-            choices: ['MIT', 'Apachae', 'GPL', 'None']
+            choices: ['MIT', 'Mozilla', 'Perl', 'None']
         },
         {
             type: 'input',

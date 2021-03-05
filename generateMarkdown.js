@@ -12,7 +12,15 @@ function renderLicenseBadge(license) {
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-
+  if (license === 'MIT') {
+    return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
+  } else if (license === 'Mozilla') {
+    return `[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)`;
+  } else if (license === 'Perl') {
+    return `[![License: Artistic-2.0](https://img.shields.io/badge/License-Perl-0298c3.svg)](https://opensource.org/licenses/Artistic-2.0)`;
+  } else {
+    return '';
+  }
 }
 
 // TODO: Create a function that returns the license section of README
@@ -42,6 +50,7 @@ function generateMarkdown(data) {
 6. [Questions?](#questions)
 
   ${renderLicenseBadge(data.license)}
+  ${renderLicenseLink(data.license)}
   ${renderLicenseSection()}
 ${
     data.description && (
@@ -81,9 +90,7 @@ ${data.test}
 ${
     data.email && (
       `## Questions?
-  If you have any questions, feel free to contact me:
-  - Via email at ${data.email} 
-  - Or through GitHub at (https://github.com/${data.github}).
+  If you have any questions, feel free to contact me via email at ${data.email}, or through GitHub at (https://github.com/${data.github}).
     `
     )
     }
