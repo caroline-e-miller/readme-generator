@@ -89,9 +89,9 @@ ${
 ${
     data.email && (
       `## Questions?
-  If you have any questions, feel free to contact me at:
-  - ${data.email} 
-  - Or through GitHub at https://github.com/${data.github}.
+  If you have any questions, feel free to contact me:
+  - Via email at ${data.email} 
+  - Or through GitHub at (https://github.com/${data.github}).
     `
     )
     }
