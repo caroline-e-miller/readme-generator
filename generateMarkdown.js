@@ -11,11 +11,22 @@ function renderLicenseBadge(license) {
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) { }
+function renderLicenseLink(license) {
+  // if (license !== '') {
+  //   return `\n[License link](#license)\n`
+  // } else {
+  //   return '';
+  // }
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
+  if (license !== '') {
+    return `\n[License section](#license)\n`
+  } else {
+    return '';
+  }
 }
 
 /*
@@ -32,11 +43,10 @@ function generateMarkdown(data) {
 3. [Usage](#usage)
 4. [Contribution](#contribution)
 5. [Test](#test)
-6. [License](#license)
-7. [GitHub](#github)
-8. [Email](#email)
+6. [Questions?](#questions)
 
   ${renderLicenseBadge(data.license)}
+  ${renderLicenseSection()}
 ${
     data.description && (
       `## Description
@@ -73,20 +83,6 @@ ${data.test}
     )
     }
 ${
-    data.license && (
-      `## License
-${data.license}
-    `
-    )
-    }
-${
-    data.github && (
-      `## Github
-  ${data.github}
-    `
-    )
-    }
-${
     data.email && (
       `## Questions?
   If you have any questions, feel free to contact me:
@@ -96,7 +92,10 @@ ${
     )
     }
 ${
-    `This product is licensed under [${renderLicenseBadge(data.license)}]()`
+    `## License`
+    }
+${
+    `This product is covered under [${renderLicenseBadge(data.license)}]()`
     }
 `;
 }
