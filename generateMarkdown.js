@@ -2,7 +2,7 @@
 // If there is no license, return an empty string
 
 
-// TODO: Create a function that returns the license link
+// Creates a function that returns the license link and badge
 // If there is no license, return an empty string
 function renderLicenseLinkAndBadge(license) {
   if (license === 'MIT') {
@@ -16,7 +16,7 @@ function renderLicenseLinkAndBadge(license) {
   }
 }
 
-// TODO: Create a function that returns the license section of README
+// Creates a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if (license !== '') {
@@ -26,10 +26,7 @@ function renderLicenseSection(license) {
   }
 }
 
-/*
-[Description](#description)
-*/
-// TODO: Create a function to generate markdown for README
+// Creates a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
 

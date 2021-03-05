@@ -1,4 +1,4 @@
-# test
+# Custom README generator
 
 ## Table of Contents
 
@@ -10,27 +10,27 @@
 6. [Questions?](#questions)
 
   
-  [![License: Artistic-2.0](https://img.shields.io/badge/License-Perl-0298c3.svg)](https://opensource.org/licenses/Artistic-2.0)
+  [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
   
 [License section](#license)
 
 ## Description
-test
+The README generator is an application that takes user input and creates a custom README file for any project, big or small.
     
 ## Installation
-test
+Take the code from the repository, and run 'npm i' in your terminal followed by 'node index.js'.
      
 ## Usage
-test
+A series of questions will appear on your screen one at a time. Take your time to answer these questions as you would want them to appear on your README.
     
 ## Contribution
-test
+This project was completed individually by Caroline Miller.
     
 ## Test
-test
+Testing isn't applicable to this application in its current state.
     
 ## Questions?
-  If you have any questions, feel free to contact me via email at test, or through GitHub at (https://github.com/test).
+  If you have any questions, feel free to contact me via email at caroline.miller@ymail.com, or through GitHub at (https://github.com/caroline-e-miller).
     
 ## License
-This product is covered under [![License: Artistic-2.0](https://img.shields.io/badge/License-Perl-0298c3.svg)](https://opensource.org/licenses/Artistic-2.0)
+This product is covered under [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
