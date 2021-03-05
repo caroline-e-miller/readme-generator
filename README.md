@@ -15,22 +15,28 @@
 [License section](#license)
 
 ## Description
-The README generator is an application that takes user input and creates a custom README file for any project, big or small.The README generator is an application that takes user input and creates a custom README file for any project, big or small.
+The README generator is an application that takes user input and creates a custom README file for any project, big or small.
     
 ## Installation
-Take the code from the repository, run ’npm i’ in your terminal, and run 'node index.js' afterward.
+Take the code from the custom README repository, and run 'npm i' in your terminal.
      
 ## Usage
-A series of questions will appear in your repository one at a time. Take your time answering these questions so they are exactly the way you want them to appear in your README file.
+A series of questions will appear on your terminal. Take your time to answer these questions exactly as you would want them to appear in your REAME file.
     
 ## Contribution
-This application was completed individually by Caroline Miller.
+This project was completed individually by Caroline Miller.
     
 ## Test
-Testing isn
+Testing isn't applicable for this application in its current stage of development.
     
 ## Questions?
   If you have any questions, feel free to contact me via email at caroline.miller@ymail.com, or through GitHub at (https://github.com/caroline-e-miller).
     
 ## License
 This product is covered under [![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)
+
+## Video and Images
+
+Video link: https://drive.google.com/file/d/18o0Ni6tAjtXw_OI6-2NHR-0QYV863y0o/view
+
+<img width="1314" alt="Screen Shot 2021-03-05 at 3 34 55 PM" src="https://user-images.githubusercontent.com/70964778/110176328-b8113a00-7dc8-11eb-85b8-757f5576312a.png">
