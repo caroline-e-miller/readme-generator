@@ -31,11 +31,11 @@ sdfsdf
 MIT
     
 ## Github
-  sdfsdf
+  bittybub
     
 ## Questions?
-  If you have any questions, feel free to contact me at
-  sdfsdfsdf.com.
+  If you have any questions, feel free to contact me at:
+  - wowiezowie.com 
+  - Or through GitHub at bittybub.
     
-## Copyright
-    This product is licensed under [![Github badge](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+This product is licensed under [![Github badge](https://img.shields.io/badge/license-MIT-blue.svg)]()

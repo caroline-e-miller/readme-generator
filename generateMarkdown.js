@@ -89,14 +89,14 @@ ${
 ${
     data.email && (
       `## Questions?
-  If you have any questions, feel free to contact me at
-  ${data.email}.
+  If you have any questions, feel free to contact me at:
+  - ${data.email} 
+  - Or through GitHub at https://github.com/${data.github}.
     `
     )
     }
 ${
-    `## Copyright
-    This product is licensed under [${renderLicenseBadge(data.license)}](LICENSE)`
+    `This product is licensed under [${renderLicenseBadge(data.license)}]()`
     }
 `;
 }
