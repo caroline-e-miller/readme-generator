@@ -1,0 +1,10 @@
+${renderLicenseBadge(data.license)}
+
+function renderLicenseBadge(license) {
+
+  if (license) {
+    return `![Github badge](https://img.shields.io/badge/license-${license}-blue.svg)`;
+  } else {
+    return '';
+  }
+}

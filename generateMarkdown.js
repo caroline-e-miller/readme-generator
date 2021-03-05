@@ -1,17 +1,10 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
-function renderLicenseBadge(license) {
 
-  if (license) {
-    return `![Github badge](https://img.shields.io/badge/license-${license}-blue.svg)`;
-  } else {
-    return '';
-  }
-}
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {
+function renderLicenseLinkAndBadge(license) {
   if (license === 'MIT') {
     return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`;
   } else if (license === 'Mozilla') {
@@ -49,8 +42,8 @@ function generateMarkdown(data) {
 5. [Test](#test)
 6. [Questions?](#questions)
 
-  ${renderLicenseBadge(data.license)}
-  ${renderLicenseLink(data.license)}
+  
+  ${renderLicenseLinkAndBadge(data.license)}
   ${renderLicenseSection()}
 ${
     data.description && (
@@ -98,7 +91,7 @@ ${
     `## License`
     }
 ${
-    `This product is covered under [${renderLicenseBadge(data.license)}]()`
+    `This product is covered under ${renderLicenseLinkAndBadge(data.license)}`
     }
 `;
 }
