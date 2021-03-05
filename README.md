@@ -39,4 +39,4 @@ This product is covered under [![License: MPL 2.0](https://img.shields.io/badge/
 
 Video link: https://drive.google.com/file/d/18o0Ni6tAjtXw_OI6-2NHR-0QYV863y0o/view
 
-<img width="1440" alt="Screen Shot 2021-03-04 at 7 17 46 PM" src="https://user-images.githubusercontent.com/70964778/110176166-839d7e00-7dc8-11eb-9fbd-d9a51b487b44.png">
+<img width="1314" alt="Screen Shot 2021-03-05 at 3 34 55 PM" src="https://user-images.githubusercontent.com/70964778/110176328-b8113a00-7dc8-11eb-85b8-757f5576312a.png">
